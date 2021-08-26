@@ -3,7 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 from flask import send_file
 import logging
-from flask import request
+
 
 @app.route("/download")
 def download():
