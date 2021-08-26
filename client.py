@@ -5,7 +5,7 @@ import time
 import sys
 import datetime
 
-URL = 'http://127.0.0.1:5000/'
+URL = 'http://127.0.0.1:5000/download'
 FILE_NAME = 'downloadedfile'
 DOWNLOAD_PERIOD = 100
 
@@ -33,7 +33,6 @@ if __name__ == '__main__':
     month = int(sys.argv[2])
     day = int(sys.argv[3])
 
-    print("Year :" + str(year) + " Month : " + str(month) + " Day : " + str(day))
     date = datetime.datetime(year=year, month=month, day=day).timestamp()
 
     run_download(URL, FILE_NAME, date)
