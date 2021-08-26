@@ -7,7 +7,7 @@ import logging
 
 @app.route("/download")
 def download():
-    path = "Comatose-Servers-Redux-2017.pdf"
+    path = "100MB.zip"
     return send_file(path, as_attachment=True)
 
 
